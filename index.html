@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huxton | Oyuncu Bilgisayarları</title>
+  <meta name="description" content="Huxton oyuncu ve iş bilgisayarları. Yüksek performanslı notebook'lar, 2 yıl garanti, ücretsiz kargo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a href="#" class="logo">HUX<span>TON</span></a>
+    <nav class="menu" id="menu">
+      <a href="#urunler">Ürünler</a>
+      <a href="#ozellikler">Neden Huxton</a>
+      <a href="#yorumlar">Yorumlar</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Sepet">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="tag">YENİ SERİ · RTX 50</span>
+      <h1>Sınırları<br><span class="accent">Aş.</span></h1>
+      <p>Huxton Tempest X serisiyle en yeni oyunları en yüksek ayarlarda oyna. 240 Hz ekran, sıvı metal soğutma ve 2 yıl Huxton garantisi.</p>
+      <div class="hero-buttons">
+        <a href="#urunler" class="btn btn-primary">Ürünleri Keşfet</a>
+        <a href="#ozellikler" class="btn btn-ghost">Daha Fazla</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>240Hz</strong><span>Ekran</span></div>
+        <div><strong>RTX 5080</strong><span>Grafik</span></div>
+        <div><strong>2 Yıl</strong><span>Garanti</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="glow"></div>
+      <svg class="laptop" viewBox="0 0 400 260" aria-hidden="true">
+        <defs>
+          <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ff2d55"/><stop offset="1" stop-color="#6a00ff"/>
+          </linearGradient>
+        </defs>
+        <rect x="60" y="10" width="280" height="180" rx="10" fill="#15151c" stroke="#333" stroke-width="2"/>
+        <rect x="72" y="22" width="256" height="156" rx="4" fill="url(#scr)"/>
+        <text x="200" y="108" text-anchor="middle" font-family="Rajdhani" font-weight="700" font-size="34" fill="#fff">HUXTON</text>
+        <path d="M20 200 L380 200 L360 235 L40 235 Z" fill="#1d1d26" stroke="#333" stroke-width="2"/>
+        <rect x="170" y="205" width="60" height="6" rx="3" fill="#333"/>
+        <rect x="40" y="235" width="320" height="6" rx="3" fill="#ff2d55" opacity=".6"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="urunler" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Ürünler</h2>
+      <div class="filters" id="filters">
+        <button class="active" data-filter="all">Tümü</button>
+        <button data-filter="oyun">Oyun</button>
+        <button data-filter="is">İş</button>
+        <button data-filter="ultra">Ultrabook</button>
+      </div>
+    </div>
+    <div class="products" id="products"></div>
+  </div>
+</section>
+
+<section id="ozellikler" class="section section-dark">
+  <div class="container">
+    <h2 class="center">Neden Huxton?</h2>
+    <div class="features">
+      <div class="feature"><div class="icon">❄️</div><h3>Sıvı Metal Soğutma</h3><p>Uzun oyun seanslarında bile düşük sıcaklık ve sessiz çalışma.</p></div>
+      <div class="feature"><div class="icon">🛡️</div><h3>2 Yıl Garanti</h3><p>Türkiye genelinde yetkili servis ve 48 saatte onarım garantisi.</p></div>
+      <div class="feature"><div class="icon">🚚</div><h3>Ücretsiz Kargo</h3><p>Tüm siparişlerde ücretsiz ve sigortalı hızlı teslimat.</p></div>
+      <div class="feature"><div class="icon">⚙️</div><h3>Kişiselleştir</h3><p>RAM ve SSD'yi ihtiyacına göre yükselt, sana özel yapılandır.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="yorumlar" class="section">
+  <div class="container">
+    <h2 class="center">Kullanıcılar Ne Diyor?</h2>
+    <p class="center muted small">Örnek yorumlardır.</p>
+    <div class="reviews">
+      <blockquote><p>"Cyberpunk'ı ultra ayarlarda 120 FPS üzeri oynuyorum, fan sesi beklediğimden çok daha az."</p><cite>— Emre K., Tempest X17</cite></blockquote>
+      <blockquote><p>"Ofiste tüm gün pil yetiyor, hafif ve şık. Toplantılarda herkes soruyor."</p><cite>— Zeynep A., Aero 14</cite></blockquote>
+      <blockquote><p>"Servis süreci çok hızlıydı, 2 günde cihazım elimdeydi."</p><cite>— Burak T., Vortex 15</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="iletisim" class="section section-dark">
+  <div class="container contact">
+    <div>
+      <h2>İletişim</h2>
+      <p class="muted">Hangi bilgisayarın sana uygun olduğunu bilmiyor musun? Yaz, uzmanlarımız yardımcı olsun.</p>
+      <ul class="contact-list">
+        <li>📍 İstanbul, Türkiye</li>
+        <li>📞 0850 000 00 00</li>
+        <li>✉️ destek@huxton.example</li>
+      </ul>
+    </div>
+    <form class="form" id="contactForm">
+      <input type="text" placeholder="Adın" required>
+      <input type="email" placeholder="E-posta" required>
+      <textarea rows="4" placeholder="Mesajın" required></textarea>
+      <button class="btn btn-primary" type="submit">Gönder</button>
+      <p class="form-msg" id="formMsg"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a href="#" class="logo">HUX<span>TON</span></a>
+    <p class="muted small">© 2026 Huxton. Bu site bir portfolyo demosudur, gerçek bir mağaza değildir.</p>
+  </div>
+</footer>
+
+<aside class="cart" id="cart">
+  <div class="cart-head">
+    <h3>Sepetim</h3>
+    <button id="cartClose" aria-label="Kapat">✕</button>
+  </div>
+  <ul class="cart-items" id="cartItems"></ul>
+  <div class="cart-foot">
+    <div class="cart-total"><span>Toplam</span><strong id="cartTotal">0 TL</strong></div>
+    <button class="btn btn-primary full" id="checkout">Siparişi Tamamla</button>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
